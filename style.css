@@ -1,0 +1,36 @@
+/* Page Styles */
+
+.section {
+    padding: 3rem 0rem;
+}
+
+.container {
+    max-width: 80rem;
+    padding: 0rem 5rem;
+}
+
+/* Accordion */
+.accordion_component {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.accordion_item {
+    border: solid 1px;
+    padding: 0rem 1rem;
+}
+
+.accordion_toggle {
+    cursor: pointer;
+    padding: 1rem 0rem;
+}
+
+.accordion_content {
+    display: none;
+    padding-bottom: 1rem;
+}
+
+.accordion_content.open {
+    display: block;
+}
