@@ -46,7 +46,6 @@ button {
 
 .accordion_item {
     background-color: var(--secondary-background-color);
-    padding: 0rem 1rem;
     border: solid 1px var(--border-color);
     border-radius: 0.5rem;
 }
@@ -65,13 +64,23 @@ button {
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
-    padding: 1rem 0rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
     cursor: pointer;
     transition: 0.1s ease;
 }
 
 .accordion_toggle:hover {
     opacity: 0.75;
+}
+
+.accordion_toggle:focus {
+    outline: 1px solid var(--text-color);
+}
+
+/* Hide outline for mouse clicks only */
+.accordion_toggle:focus:not(:focus-visible) {
+    outline: none;
 }
 
 .accordion_icon {
@@ -86,6 +95,6 @@ button {
 }
 
 .accordion_content-inner {
-    padding-bottom: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
     color: var(--secondary-text-color);
 }
