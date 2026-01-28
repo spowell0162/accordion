@@ -1,10 +1,18 @@
 "use strict";
 
-// Manually open and close
-document.querySelector('.accordion_component').addEventListener('click', function (e) {
-    const toggle = e.target.closest('.accordion_toggle'); // goes up the dom tree until it finds this class
-    if (!toggle) return; // exits of it can't find the class
-    const item = toggle.closest('.accordion_item');
-    const isOpen = item.classList.toggle('open'); // .toggle returns boolean - true if added, false if removed
-    toggle.setAttribute('aria-expanded', isOpen); //setAttribute takes the attribute and its value
-});
+const accordion = document.querySelector('.accordion');
+
+if (accordion) {
+    document.querySelector('.accordion').addEventListener('click', function (e) {
+        // go up the dom tree until it finds this accordion_toggle
+        const toggle = e.target.closest('.accordion_toggle');
+        // exit if it can't find the class
+        if (!toggle) return;
+        const item = toggle.closest('.accordion_item');
+        if (!item) return;
+        // .toggle() returns true if added, false if removed
+        const isOpen = item.classList.toggle('open');
+        // .setAttribute takes the attribute and its value
+        toggle.setAttribute('aria-expanded', isOpen);
+    });
+} else console.warn('Accordion not found');

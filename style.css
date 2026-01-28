@@ -38,7 +38,7 @@ button {
 }
 
 /* Accordion */
-.accordion_component {
+.accordion {
     display: flex;
     flex-direction: column;
     gap: 1rem;
