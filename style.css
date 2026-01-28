@@ -17,13 +17,25 @@
 }
 
 .accordion_item {
-    border: solid 1px;
     padding: 0rem 1rem;
+    border: solid 1px;
+    border-radius: 0.5rem;
 }
 
 .accordion_toggle {
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 0rem;
+    cursor: pointer;
+}
+
+.accordion_icon {
+    width: 1.25rem;
+}
+
+.accordion_icon.open {
+    transform: rotate(180deg);
 }
 
 .accordion_content {
