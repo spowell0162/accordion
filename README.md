@@ -13,6 +13,10 @@ A lightweight, accessible accordion component built with vanilla JavaScript, HTM
 
 ## Demo
 
+Live link: https://spowell0162.github.io/accordion/
+
+![Accordion with one item open](<Screenshot 2026-01-30 at 10.36.46.png>)
+
 The accordion allows users to expand and collapse content sections. Multiple sections can be open simultaneously.
 
 ## Installation
