@@ -38,7 +38,10 @@ button {
 }
 
 /* Accordion */
+
 .accordion {
+    max-width: 50rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
